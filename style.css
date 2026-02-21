@@ -1,0 +1,328 @@
+:root {
+  --bs-secondary: #44477b;
+  --bs-info: #172736;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+ min-height: 2000px;
+  font-family: "Roboto", Consolas, sans-serif;
+  background: #dedff1;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #c8cdceec;
+  padding: 1rem 7%;
+  border-bottom: 1px solid #3b3b3b54;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.menu .logo {
+  text-decoration: none;
+  color: #172736;
+  font-size: 2rem;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.menu .logo span {
+  font-size: 1.5rem;
+  color: var(--bs-secondary);
+}
+
+.menu .list a {
+  text-decoration: none;
+  color: #08018694;
+  display: inline-block;
+  margin: 0 1rem;
+  font-size: 1.3rem;
+  font-weight: 450;
+}
+
+.menu .list a:hover {
+  color: var(--bs-secondary);
+  padding: 1px;
+  border-bottom: 1px solid #393943;
+  transition: all;
+  transition-duration: 0.5s;
+}
+
+.menu-home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-home::after{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  bottom: 0;
+  background: linear-gradient(0deg, rgba(95,95,95,0.473) 8%, rgba(255, 255, 255, 0) 25%);
+}
+
+.menu-home .for-home {
+  padding: 1.5rem 7%;
+  margin-left: 3rem;
+}
+
+.menu-home .for-home p {
+  font-size: 1.5rem;
+  color: var(--bs-info);
+  font-weight: 325;
+  line-height: 2rem;
+  text-shadow:1px 1px 3px rgba(1 1 1 0.5);
+}
+
+.menu-home .for-home h2 {
+  font-size: 4rem;
+  color: var(--bs-info);
+  text-shadow: 1px 1px 3px rgba(1 1 1 0.5);
+  line-height: 1.4;
+}
+
+.menu-home .for-home a{
+  margin-top: 2.5rem;
+  text-decoration: none;
+  background: #4a4ab3;
+  color: #ffffff;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+
+.deskripsi {
+  padding: 7rem 7% 1.4rem;
+}
+
+.deskripsi h3 {
+  color: black;
+  text-align: center;
+  font-size: 4.2rem;
+  margin-bottom: 2rem;
+}
+
+.deskripsi h3 span {
+  color: var(--bs-secondary);
+}
+
+.deskripsi .tng-saya {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.deskripsi .tng-saya .foto {
+  flex: 1 1 25rem;
+}
+
+.deskripsi .tng-saya .foto img {
+  width: 100%;
+  aspect-ratio: 1/1.1;
+  object-position: center;
+  object-fit: cover;
+  border-radius: 50px;
+}
+
+.deskripsi .tng-saya .isi {
+  flex: 1 1 35rem;
+  padding: 0 1rem;
+}
+
+.deskripsi .tng-saya .isi h4 {
+  color: var(--bs-secondary);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.deskripsi .tng-saya .isi h4 span {
+  padding: 0 0.5rem;
+  color: #8f92ea;
+}
+.deskripsi .tng-saya .isi p {
+  margin-top: 1.6rem;
+  font-size: 1.2rem;
+  color: var(--bs-info);
+  font-weight: 325;
+  line-height: 2rem;
+  text-shadow:1px 1px 3px rgba(1 1 1 0.5);
+}
+
+.menu-prj {
+  padding: 7rem 7% 1.4rem;
+  min-height: 75vh;
+}
+
+.menu-prj h4 {
+  color: black;
+  text-align: center;
+  font-size: 4.2rem;
+  margin-bottom: 2rem;
+}
+
+.menu-prj .sosmed {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem
+  margin-top: 5rem;
+  justify-content: center;
+}
+
+.menu-prj .sosmed .ig {
+  text-align: center;
+}
+
+.menu-prj .sosmed .ig a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu-prj .sosmed .ig img {
+  width: 40%;
+  height: 40%;
+  object-fit: contain;
+  mix-blend-mode: color-burn;
+  border-radius: 100%;
+  margin-top: 2rem;
+}
+
+.menu-prj .sosmed .ig h5 {
+  margin-top: 1rem auto 0.5rem;
+  font-size: 2rem;
+}
+
+.masukan {
+  padding: 7rem 7% 1.4rem;
+  min-height: 65vh;
+}
+
+.masukan h4 {
+  text-align: center;
+  font-size: 5rem;
+  margin-bottom: 5rem;
+}
+
+.masukan .notes {
+}
+
+.masukan .notes marquee {
+  padding: 2rem;
+  color: var(--bs-info);
+}
+
+.masukan .notes label {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 3.4rem;
+}
+
+.masukan .notes input, textarea {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 2px solid var(--bs-secondary);
+  border-radius: 8px;
+}
+
+.masukan .notes button {
+  width: 25%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 2px solid var(--bs-secondary);
+  border-radius: 8px;
+  background: #4a4ab3;
+  color: white;
+}
+
+.footer {
+  text-align: center;
+  margin-bottom: 2rem;
+  line-height: 1.5rem;
+  font-weight: 300;
+}
+ 
+#humburger-menu {
+  display: none;
+}
+/* hp */
+@media (max-width: 800px) {
+  html {
+    font-size: 55%;
+  }
+  #humburger-menu {
+    display: block;
+  }
+  
+  .menu .list {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background: var(--bs-secondary);
+    width: 50%;
+    height: 100vh;
+    transition-duration: 0.5s;
+  }
+  
+  .menu .list.active {
+    right: 0;
+  }
+  
+  .menu .list a {
+    display: block;
+    text-align: center;
+    align-items: center;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 18px;
+    color: #d8d8f8;
+  }
+  
+  .menu .list a:hover {
+    color: var(--bs-secondary);
+    padding:0 1px;
+    border-bottom: 1px solid #393943;
+    transition: 0.1s;
+  }
+  
+  .menu-home::after {
+   /* display: none;*/
+  }
+  
+  .deskripsi .tng-saya {
+    flex-wrap: wrap;
+  }
+  
+  .deskripsi .tng-saya .isi h4 {
+    font-size: 5rem;
+    margin-top: 2rem;
+  }
+  
+  .deskripsi .tng-saya .isi p {
+    font-size: 2.3rem;
+    line-height: 2.5rem;
+    margin-bottom: 2rem;
+  }
+}
