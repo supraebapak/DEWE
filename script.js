@@ -11,3 +11,7 @@ document.addEventListener("click", function(e) {
     navbarNav.classList.remove("active");
   }
 });
+
+function Exer(){
+   windows.alert("OKE, Makasihhh Masukanya");
+}
